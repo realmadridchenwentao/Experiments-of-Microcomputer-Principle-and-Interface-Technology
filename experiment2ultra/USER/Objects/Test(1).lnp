@@ -1,0 +1,12 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\delay.o"
+".\objects\sys.o"
+".\objects\system_stm32f4xx.o"
+".\objects\startup_stm32f40_41xxx.o"
+".\objects\stm32f4xx_gpio.o"
+".\objects\stm32f4xx_rcc.o"
+--strict --scatter ".\Objects\Test.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Test.map" -o .\Objects\Test.axf
